@@ -196,8 +196,9 @@ export const Transaction = () => {
           <div className="overflow-x-auto">
             <table {...getTableProps()} className="w-full">
               <thead>
-                {headerGroups.map((headerGroup) => (
-                  <tr {...headerGroup.getHeaderGroupProps()} className="bg-green-100">
+                {headerGroups.map((headerGroup, index) => (
+
+                  <tr {...headerGroup.getHeaderGroupProps()} className="  bg-green-100" key={index}>
                     {headerGroup.headers.map((column) => (
                       <th {...column.getHeaderProps()} className="p-3 text-left font-semibold text-green-700">
                         {column.render("Header")}
@@ -207,12 +208,12 @@ export const Transaction = () => {
                 ))}
               </thead>
               <tbody {...getTableBodyProps()}>
-                {rows.map((row) => {
+                {rows.map((row, index) => {
                   prepareRow(row);
                   return (
-                    <tr {...row.getRowProps()} className="border-b border-green-200 hover:bg-green-50 transition-colors duration-150">
-                      {row.cells.map((cell) => (
-                        <td {...cell.getCellProps()} className="p-3">
+                    <tr {...row.getRowProps()} className="border-b border-green-200 hover:bg-green-50 transition-colors duration-150" key={index}>
+                      {row.cells.map((cell, index) => (
+                        <td {...cell.getCellProps()} className="p-3" key={index}>
                           {cell.render("Cell")}
                         </td>
                       ))}

@@ -7,7 +7,7 @@ export default function DashboardPage() {
       {/* <Navbar /> */}
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold text-[#674636] mb-4">Welcome to your Dashboard</h1>
-        <p className="text-[#AAB396]">This is where you'll see your green goals and progress.</p>
+        <p className="text-[#AAB396]">This is where you will see your green goals and progress.</p>
       </div>
     </div>
   );
