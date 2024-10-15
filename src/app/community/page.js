@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Flag ,User, PlusCircle, MessageCircle, Heart, XCircle, Send, Trash2, AlertCircle, CheckCircle, Info } from 'lucide-react';
 import Swal from "sweetalert2";
-import withReactContent from "sweetalert2-react-content";
+import withReactContent from "sweetalert2";
 const categories = ['sustainability', 'recycling', 'environmental protection', 'eco-friendly', 'green initiatives', 'environmental awareness', 'waste management'];
 
 const Notification = ({ message, type, onClose }) => {
