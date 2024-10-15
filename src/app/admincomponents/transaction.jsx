@@ -199,8 +199,8 @@ export const Transaction = () => {
                 {headerGroups.map((headerGroup, index) => (
 
                   <tr {...headerGroup.getHeaderGroupProps()} className="  bg-green-100" key={index}>
-                    {headerGroup.headers.map((column) => (
-                      <th {...column.getHeaderProps()} className="p-3 text-left font-semibold text-green-700">
+                    {headerGroup.headers.map((column , index) => (
+                      <th {...column.getHeaderProps()} className="p-3 text-left font-semibold text-green-700"key={index}>
                         {column.render("Header")}
                       </th>
                     ))}
