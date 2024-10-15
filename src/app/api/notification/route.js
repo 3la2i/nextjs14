@@ -1,6 +1,6 @@
 // app/api/notifications/route.js
 import { NextResponse } from 'next/server';
-import dbConnect from '../../../lib/db';
+import {connectDB} from '../../../lib/db';
 import Notification from '@/models/Notification';
 import { getServerSession } from "next-auth/next";
 // import { authOptions } from "../auth/[...nextauth]/route";
@@ -11,7 +11,7 @@ export async function GET(request) {
   //   return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   // }
 
-  await dbConnect();
+  await connectDB();
 
   try {
     const notifications = await Notification.find({ recipient: 1 })
@@ -31,7 +31,7 @@ export async function POST(request) {
   //   return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   // }
 
-  await dbConnect();
+  await connectDB();
 
   try {
     const { recipient, sender, post, comment, type } = await request.json();

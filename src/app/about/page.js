@@ -117,7 +117,7 @@ export default function AboutUs() {
             </div>
           </div>
           <p className="text-xl text-center mt-8">
-            Together, we're making a measurable difference in the fight against climate change through sustainable reading practices.
+            Together, we are making a measurable difference in the fight against climate change through sustainable reading practices.
           </p>
         </div>
       </section>

@@ -1,3 +1,7 @@
+
+
+
+
 "use client"
 import { useState, useEffect } from 'react'
 import axios from 'axios'
@@ -225,7 +229,7 @@ const UserBooks = ({ books, onDeleteBook }) => (
         ))}
       </div>
     ) : (
-      <p className="text-green-700 text-lg">You haven't posted any books yet.</p>
+      <p className="text-green-700 text-lg">You have not posted any books yet.</p>
     )}
     <div className="mt-8 text-center">
       <Link href="/books/add" className="bg-green-600 text-white hover:bg-green-700 px-6 py-3 rounded-lg text-lg inline-flex items-center">
@@ -299,7 +303,7 @@ const UserTransactions = ({ transactions }) => (
         </table>
       </div>
     ) : (
-      <p className="text-green-700 text-lg">You don't have any transactions yet.</p>
+      <p className="text-green-700 text-lg">You do not have any transactions yet.</p>
     )}
   </div>
 )

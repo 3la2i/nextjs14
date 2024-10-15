@@ -110,7 +110,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8 text-green-700">Our Vision</h2>
           <p className="text-xl text-center mb-12 max-w-3xl mx-auto text-gray-600">
-            We envision a world where books continue to enrich lives without depleting our planet's resources. 
+            We envision a world where books continue to enrich lives without depleting our planets resources. 
             By promoting book exchange and responsible reuse, we aim to reduce waste and minimize the environmental impact of book production and disposal.
           </p>
           <div className="flex flex-wrap justify-center gap-8">
